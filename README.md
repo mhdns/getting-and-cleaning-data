@@ -5,7 +5,7 @@ The repository contains a 3 files/directory:
 
 1. ```run_analysis.R``` - R script downloads the zip file and extracts the raw \
 data to data directory. The raw data is cleaned and saved inside data directory \
-as tidy.csv and grp_tidy.csv. Details of the files can found in ```CodeBook.md```
+as tidy.txt and grp_tidy.txt. Details of the files can found in ```CodeBook.md```
 
 2. ```CodeBook.md``` - Contain descriptions for variables
 

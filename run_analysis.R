@@ -81,8 +81,8 @@ dataset <- cbind(subject_data, activity_data, features_data)
 rm(activity_labels, labels_data, activity_data, features_data, subject_data)
 
 # Save cleaned data set into csv file - tidy.csv
-write.csv(dataset, file.path(getwd(), 
-                             "data", "tidy.csv"), row.names = F)
+write.table(dataset, file.path(getwd(), 
+                             "data", "tidy.txt"), row.names = F)
 
 # Group the data to get mean of the variables for each subject and activity
 dataset <- as_tibble(dataset)
@@ -107,5 +107,5 @@ colnames(grouped_dataset) <- new_names
 # Environment clean up
 rm(i, new_names)
 # Save grouped data into csv file - grp_tidy.csv
-write.csv(grouped_dataset, 
-          file.path(getwd(), "data", "grp_tidy.csv"), row.names = F)
+write.table(grouped_dataset, 
+          file.path(getwd(), "data", "grp_tidy.txt"), row.names = F)
